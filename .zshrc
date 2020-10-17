@@ -232,6 +232,9 @@ export NNN_IDLE_TIMEOUT=180
 # - s: Organize
 # - b: Page the file with bat
 export NNN_PLUG='o:fzopen;p:-_feh -Z.;P:-_feh -Z. `ls|sort -n`;d:diffs;k:-chksum;c:fzcd;z:fzz;S:organize;b:-_bat $nnn;s:croc'
+## GPG {{{2
+export GPG_TTY=$(tty)
+
 ## Custom {{{2
 export TASKRC="~/.taskrc"
 
@@ -248,14 +251,17 @@ path=(
 unsetopt beep
 
 ## Python {{{2
-source ~/pyenv/env/bin/activate
+if [ ! "${TTY:5:3}" = "tty" ]; then
+    # Load venv only on pseudo-tty
+    source ~/pyenv/env/bin/activate
+fi
 export HASURA_GRAPHQL_ADMIN_SECRET="CINDYTHINK_HASURA_ADMIN_SECRET"
 
 ## Change ls colors {{{2
 export LS_COLORS="$LS_COLORS:ow=1;36"
 
 ## Navi {{{2
-export NAVI_PATH=~/.config/navi/custom/
+export NAVI_PATH=~/.config/navi/custom
 
 # Starship for zsh {{{1
 #case "$TERM" in

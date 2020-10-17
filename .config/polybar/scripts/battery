@@ -29,9 +29,15 @@ until_full() {
 
 format_time() {
     HOURS=$(echo "$1" | cut -d. -f1)
-    if [ ! $HOURS ]; then HOURS=0; fi
-    MINUTES=$(echo "0.$(echo "$1" | cut -d. -f2) * 60" | bc | cut -d. -f1)
-    printf "%s %02d:%02d" $(time_symbol $HOURS) $HOURS $MINUTES
+    HOURS=${HOURS:-0}
+    if [ ! $HOURS = "-" ]; then
+        MINUTES=$(echo "0.$(echo "$1" | cut -d. -f2) * 60" | bc | cut -d. -f1)
+        printf "%s %02d:%02d" $(time_symbol $HOURS) $HOURS $MINUTES
+    else
+        HOURS=0
+        MINUTES=0
+        printf "%s %02d:%02d" $(time_symbol $HOURS) $HOURS $MINUTES
+    fi
 }
 
 time_symbol() {

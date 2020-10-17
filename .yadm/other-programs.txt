@@ -1,12 +1,11 @@
 /home/heyrict/Programs/
-├── anki
-│   └── Makefile
 ├── bin
 │   ├── graphql-playground -> ../GraphqlPlayground/graphql-playground-electron-1.8.10-x86_64.AppImage
 │   ├── hasura
 │   ├── html2text -> ../html2text/html2text.py
 │   ├── servefiles-cia -> ../FBI/servefiles/servefiles.py
-│   └── Slicer -> ../Slicer-4.11.0-2020-04-30-linux-amd64/Slicer
+│   ├── Slicer -> ../Slicer-4.11.0-2020-04-30-linux-amd64/Slicer
+│   └── tokei
 ├── chineseocr_lite
 │   ├── android_demo
 │   ├── angle_class
@@ -72,4 +71,4 @@
     ├── ventoy
     └── Ventoy2Disk.sh
 
-42 directories, 30 files
+41 directories, 30 files

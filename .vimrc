@@ -509,7 +509,7 @@ let g:previm_custom_css_path = '~/assets/css/solarized-light.min.css'
 "
 nnoremap <silent> <F9> :NERDTreeToggle<CR>
 let g:NERDTreeQuitOnOpen = 1
-let g:NERDTreeIndicatorMapCustom = {
+let g:NERDTreeGitStatusIndicatorMapCustom = {
     \ "Modified"  : "!",
     \ "Staged"    : "+",
     \ "Untracked" : "*",
