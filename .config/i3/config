@@ -61,7 +61,7 @@ set $mtr_blue-gray   "#546e7a"
 
 # Colors
 # class                 border    bg        text      indicator  child_border
-client.focused          $base03   $magenta  $base3    $base01    $magenta 
+client.focused          $base03   $green    $base3    $green     $green 
 client.unfocused        $base01   $base01   $base2    $base01    $base02
 client.focused_inactive $yellow   $yellow   $base2    $base01    $base02
 client.urgent           $red      $red      $base3    $base01    $base02
