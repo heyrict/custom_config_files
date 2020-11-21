@@ -131,6 +131,20 @@ let g:pandoc#spell#enabled = 0
 let g:pandoc#modules#disabled = ["bibliography"]
 "let g:pandoc#spell#default_langs = ['en_us', 'cjk']
 
+" Keyboard mappings
+nmap <buffer> <localleader>i <Plug>(pandoc-keyboard-emphasis)
+vmap <buffer> <localleader>i <Plug>(pandoc-keyboard-emphasis)
+nmap <buffer> <localleader>b <Plug>(pandoc-keyboard-strong)
+vmap <buffer> <localleader>b <Plug>(pandoc-keyboard-strong)
+nmap <buffer> <localleader>' <Plug>(pandoc-keyboard-verbatim)
+vmap <buffer> <localleader>' <Plug>(pandoc-keyboard-verbatim)
+nmap <buffer> <localleader>~ <Plug>(pandoc-keyboard-strikeout)
+vmap <buffer> <localleader>~ <Plug>(pandoc-keyboard-strikeout)
+nmap <buffer> <localleader>^ <Plug>(pandoc-keyboard-superscript)
+vmap <buffer> <localleader>^ <Plug>(pandoc-keyboard-superscript)
+nmap <buffer> <localleader>_ <Plug>(pandoc-keyboard-subscript)
+vmap <buffer> <localleader>_ <Plug>(pandoc-keyboard-subscript)
+
 " Adding bullet support
 autocmd filetype pandoc,markdown set comments+=b:*,b:-,b:+
 autocmd filetype pandoc,markdown set formatoptions+=rmB
