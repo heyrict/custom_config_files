@@ -386,7 +386,7 @@ bindsym $mod+shift+g exec i3-input -F '[con_mark="%s"] focus' -l 1 -P 'Goto: '
 #}
 
 # Rename service
-exec --no-startup-id workstyle
+#exec --no-startup-id workstyle
 
 # Applets
 #exec --no-startup-id nm-applet

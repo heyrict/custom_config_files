@@ -130,20 +130,57 @@ let g:pandoc#folding#mode = 'syntax'
 let g:pandoc#spell#enabled = 0
 let g:pandoc#modules#disabled = ["bibliography"]
 "let g:pandoc#spell#default_langs = ['en_us', 'cjk']
+let g:pandoc#keyboard#use_default_mappings = 0
 
 " Keyboard mappings
-nmap <buffer> <localleader>i <Plug>(pandoc-keyboard-emphasis)
-vmap <buffer> <localleader>i <Plug>(pandoc-keyboard-emphasis)
-nmap <buffer> <localleader>b <Plug>(pandoc-keyboard-strong)
-vmap <buffer> <localleader>b <Plug>(pandoc-keyboard-strong)
-nmap <buffer> <localleader>' <Plug>(pandoc-keyboard-verbatim)
-vmap <buffer> <localleader>' <Plug>(pandoc-keyboard-verbatim)
-nmap <buffer> <localleader>~ <Plug>(pandoc-keyboard-strikeout)
-vmap <buffer> <localleader>~ <Plug>(pandoc-keyboard-strikeout)
-nmap <buffer> <localleader>^ <Plug>(pandoc-keyboard-superscript)
-vmap <buffer> <localleader>^ <Plug>(pandoc-keyboard-superscript)
-nmap <buffer> <localleader>_ <Plug>(pandoc-keyboard-subscript)
-vmap <buffer> <localleader>_ <Plug>(pandoc-keyboard-subscript)
+" > Styles
+autocmd filetype pandoc,markdown nnoremap <localleader>i <Plug>(pandoc-keyboard-emphasis)
+autocmd filetype pandoc,markdown vnoremap <localleader>i <Plug>(pandoc-keyboard-emphasis)
+autocmd filetype pandoc,markdown nnoremap <localleader>b <Plug>(pandoc-keyboard-strong)
+autocmd filetype pandoc,markdown vnoremap <localleader>b <Plug>(pandoc-keyboard-strong)
+autocmd filetype pandoc,markdown nnoremap <localleader>' <Plug>(pandoc-keyboard-verbatim)
+autocmd filetype pandoc,markdown vnoremap <localleader>' <Plug>(pandoc-keyboard-verbatim)
+autocmd filetype pandoc,markdown nnoremap <localleader>~ <Plug>(pandoc-keyboard-strikeout)
+autocmd filetype pandoc,markdown vnoremap <localleader>~ <Plug>(pandoc-keyboard-strikeout)
+autocmd filetype pandoc,markdown nnoremap <localleader>^ <Plug>(pandoc-keyboard-superscript)
+autocmd filetype pandoc,markdown vnoremap <localleader>^ <Plug>(pandoc-keyboard-superscript)
+autocmd filetype pandoc,markdown nnoremap <localleader>_ <Plug>(pandoc-keyboard-subscript)
+autocmd filetype pandoc,markdown vnoremap <localleader>_ <Plug>(pandoc-keyboard-subscript)
+
+" > Checkbox
+autocmd filetype pandoc,markdown nnoremap <localleader>cb <Plug>(pandoc-keyboard-toggle-cb)
+autocmd filetype pandoc,markdown vnoremap <localleader>cb <Plug>(pandoc-keyboard-toggle-cb)
+autocmd filetype pandoc,markdown nnoremap <localleader>cd <Plug>(pandoc-keyboard-delete-cb)
+autocmd filetype pandoc,markdown vnoremap <localleader>cd <Plug>(pandoc-keyboard-delete-cb)
+
+" > Paragraph
+autocmd filetype pandoc,markdown noremap <localleader>o }o<esc>O
+autocmd filetype pandoc,markdown noremap <localleader>O {O<esc>o
+
+" > Header
+autocmd filetype pandoc,markdown nnoremap <localleader>hn <Plug>(pandoc-keyboard-next-header)
+autocmd filetype pandoc,markdown nnoremap <localleader>hb <Plug>(pandoc-keyboard-prev-header)
+autocmd filetype pandoc,markdown nnoremap <localleader>hh <Plug>(pandoc-keyboard-cur-header)
+autocmd filetype pandoc,markdown nnoremap <localleader>hp <Plug>(pandoc-keyboard-cur-header-parent)
+autocmd filetype pandoc,markdown nnoremap <localleader>hsn <Plug>(pandoc-keyboard-next-header-sibling)
+autocmd filetype pandoc,markdown nnoremap <localleader>hsb <Plug>(pandoc-keyboard-prev-header-sibling)
+autocmd filetype pandoc,markdown nnoremap <localleader>hcf <Plug>(pandoc-keyboard-first-header-child)
+autocmd filetype pandoc,markdown nnoremap <localleader>hcl <Plug>(pandoc-keyboard-last-header-child)
+autocmd filetype pandoc,markdown nnoremap <localleader>hcn <Plug>(pandoc-keyboard-nth-header-child)
+autocmd filetype pandoc,markdown nnoremap ]] <Plug>(pandoc-keyboard-ff-header)
+autocmd filetype pandoc,markdown nnoremap [[ <Plug>(pandoc-keyboard-rw-header)
+autocmd filetype pandoc,markdown nnoremap ][ <Plug>(pandoc-keyboard-ff-sect-end)
+autocmd filetype pandoc,markdown nnoremap [] <Plug>(pandoc-keyboard-rw-sect-end)
+autocmd filetype pandoc,markdown vnoremap aS <Plug>(pandoc-keyboard-select-section-inclusive)
+autocmd filetype pandoc,markdown onoremap aS :normal VaS<cr>
+autocmd filetype pandoc,markdown vnoremap iS <Plug>(pandoc-keyboard-select-section-exclusive)
+autocmd filetype pandoc,markdown onoremap iS :normal ViS<cr>
+
+" > FileLink
+autocmd filetype pandoc,markdown nnoremap <localleader>gl <Plug>(pandoc-keyboard-links-open)
+autocmd filetype pandoc,markdown nnoremap <localleader>sl <Plug>(pandoc-keyboard-links-split)
+autocmd filetype pandoc,markdown nnoremap <localleader>gb <Plug>(pandoc-keyboard-links-back)
+autocmd filetype pandoc,markdown nnoremap <localleader>gB <Plug>(pandoc-keyboard-links-file-back)
 
 " Adding bullet support
 autocmd filetype pandoc,markdown set comments+=b:*,b:-,b:+

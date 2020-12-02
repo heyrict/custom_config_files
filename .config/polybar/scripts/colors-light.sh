@@ -4,6 +4,7 @@
 ## Github : adi1090x
 
 PDIR="$HOME/.config/polybar"
+SDIR="$HOME/.config/polybar/scripts"
 LAUNCH="polybar-msg cmd restart"
  
 if  [[ $1 = "-amber" ]]; then
@@ -14,6 +15,7 @@ sed -i -e 's/ac = .*/ac = #ffb300/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #ffb300/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #ffb300/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -am
 # Restarting polybar
 $LAUNCH &
 
@@ -25,6 +27,7 @@ sed -i -e 's/ac = .*/ac = #1e88e5/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #1e88e5/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #1e88e5/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -bl
 # Restarting polybar
 $LAUNCH &
 
@@ -36,6 +39,7 @@ sed -i -e 's/ac = .*/ac = #546e7a/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #546e7a/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #546e7a/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -bg
 # Restarting polybar
 $LAUNCH &
 
@@ -47,6 +51,7 @@ sed -i -e 's/ac = .*/ac = #6d4c41/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #6d4c41/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #6d4c41/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -br
 # Restarting polybar
 $LAUNCH &
 
@@ -58,6 +63,7 @@ sed -i -e 's/ac = .*/ac = #00acc1/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #00acc1/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #00acc1/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -cy
 # Restarting polybar
 $LAUNCH &
 
@@ -69,6 +75,7 @@ sed -i -e 's/ac = .*/ac = #f4511e/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #f4511e/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #f4511e/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -do
 # Restarting polybar
 $LAUNCH &
 
@@ -80,6 +87,7 @@ sed -i -e 's/ac = .*/ac = #5e35b1/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #5e35b1/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #5e35b1/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -dp
 # Restarting polybar
 $LAUNCH &
 
@@ -91,6 +99,7 @@ sed -i -e 's/ac = .*/ac = #43a047/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #43a047/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #43a047/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -gr
 # Restarting polybar
 $LAUNCH &
 
@@ -102,6 +111,7 @@ sed -i -e 's/ac = .*/ac = #757575/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #757575/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #757575/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -gre
 # Restarting polybar
 $LAUNCH &
 
@@ -113,6 +123,7 @@ sed -i -e 's/ac = .*/ac = #3949ab/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #3949ab/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #3949ab/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -in
 # Restarting polybar
 $LAUNCH &
 
@@ -124,6 +135,7 @@ sed -i -e 's/ac = .*/ac = #039be5/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #039be5/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #039be5/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -lb
 # Restarting polybar
 $LAUNCH &
 
@@ -135,6 +147,7 @@ sed -i -e 's/ac = .*/ac = #7cb342/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #7cb342/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #7cb342/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -lg
 # Restarting polybar
 $LAUNCH &
 
@@ -146,6 +159,7 @@ sed -i -e 's/ac = .*/ac = #c0ca33/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #c0ca33/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #c0ca33/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #252525/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -li
 # Restarting polybar
 $LAUNCH &
 
@@ -157,6 +171,7 @@ sed -i -e 's/ac = .*/ac = #fb8c00/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #fb8c00/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #fb8c00/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -or
 # Restarting polybar
 $LAUNCH &
 
@@ -168,6 +183,7 @@ sed -i -e 's/ac = .*/ac = #d81b60/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #d81b60/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #d81b60/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -pi
 # Restarting polybar
 $LAUNCH &
 
@@ -179,6 +195,7 @@ sed -i -e 's/ac = .*/ac = #8e24aa/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #8e24aa/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #8e24aa/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -pr
 # Restarting polybar
 $LAUNCH &
 
@@ -190,6 +207,7 @@ sed -i -e 's/ac = .*/ac = #e53935/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #e53935/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #e53935/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -re
 # Restarting polybar
 $LAUNCH &
 
@@ -201,6 +219,7 @@ sed -i -e 's/ac = .*/ac = #00897b/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #00897b/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #00897b/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #f5f5f5/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -te
 # Restarting polybar
 $LAUNCH &
 
@@ -212,6 +231,7 @@ sed -i -e 's/ac = .*/ac = #fdd835/g' $PDIR/colors.ini
 sed -i -e 's/bi = .*/bi = #fdd835/g' $PDIR/colors.ini
 sed -i -e 's/be = .*/be = #fdd835/g' $PDIR/colors.ini
 sed -i -e 's/mf = .*/mf = #252525/g' $PDIR/colors.ini
+$SDIR/colors-shade.sh -ye
 # Restarting polybar
 $LAUNCH &
 
