@@ -3,9 +3,11 @@
 SINK_ID=`pulsemixer --list-sinks |\
     sed 's/^.*ID: \([^,]\+\), Name: \([^,]\+\).*$/\1: \2/' |\
     rofi -dmenu -i -p 'Sink'\
-    -location 5 -xoffset -40 -yoffset -40 \
+    -location 5 -xoffset 0 -yoffset -20 \
     -width 30 -line-padding 4 -padding 2 -lines 4\
     -hide-scrollbar -no-show-icons |\
     sed 's/^.*-\([0-9]\+\).*$/\1/'`
 
-pacmd set-default-sink $SINK_ID
+if [ -n $SINK_ID ]; then
+    pacmd set-default-sink $SINK_ID
+fi
