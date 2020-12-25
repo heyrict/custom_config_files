@@ -215,12 +215,12 @@ path+=$HOME/Flutter/bin/cache/dart-sdk/bin
 # - m: Multimedia
 # - u: Mount point
 # - t: /tmp
-export NNN_BMS="w:~/Eric/MyPrograms;c:~/pandoc_markdown/markdown/CliMed;m:/mnt/LENOVO/Eric/mov;u:/mnt;t:/tmp"
+export NNN_BMS="w:~/MyPrograms;c:~/pandoc_markdown/markdown/CliMed;m:/mnt/LENOVO/Eric/mov;u:/mnt;t:/tmp"
 
 # Light theme
 export NNN_COLORS='5234'
 export NNN_FCOLORS='04030c020001090e050ddc06'
-export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip)$"
+export NNN_ARCHIVE="\\.(7z|bz2|gz|tar|tgz|zip|zst)$"
 export NNN_IDLE_TIMEOUT=180
 
 # Plugins
