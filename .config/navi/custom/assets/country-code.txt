@@ -1,0 +1,151 @@
+Afghanistan,af
+Albania,al
+Algeria,dz
+Andorra,ad
+Angola,ao
+Argentina,ar
+Armenia,am
+Aruba,aw
+Australia,au
+Austria,at
+Azerbaijan,az
+Bahrain,bh
+Bangladesh,bd
+Barbados,bb
+Belarus,by
+Belgium,be
+Bolivia,bo
+Bosnia and Herzegovina,ba
+Brazil,br
+Brunei,bn
+Bulgaria,bg
+Burkina Faso,bf
+Cambodia,kh
+Cameroon,cm
+Canada,ca
+Chile,cl
+China,cn
+Colombia,co
+Costa Rica,cr
+Croatia,hr
+Curaçao,cw
+Cyprus,cy
+Czech Republic,cz
+Democratic Republic of the Congo,cd
+Denmark,dk
+Dominican Republic,do
+Ecuador,ec
+Egypt,eg
+El Salvador,sv
+Equatorial Guinea,gq
+Eritrea,er
+Estonia,ee
+Ethiopia,et
+Faroe Islands,fo
+Finland,fi
+Fiji,fj
+France,fr
+Gambia,gm
+Georgia,ge
+Germany,de
+Ghana,gh
+Greece,gr
+Guadeloupe,gp
+Guyana,gy
+Haiti,ht
+Honduras,hn
+Hong Kong,hk
+Hungary,hu
+Iceland,is
+India,in
+Indonesia,id
+International,int
+Iran,ir
+Iraq,iq
+Ireland,ie
+Israel,il
+Italy,it
+Ivory Coast,ci
+Jamaica,jm
+Japan,jp
+Jordan,jo
+Kazakhstan,kz
+Kosovo,xk
+Kuwait,kw
+Kyrgyzstan,kg
+Laos,la
+Latvia,lv
+Lebanon,lb
+Libya,ly
+Liechtenstein,li
+Lithuania,lt
+Luxembourg,lu
+Macau,mo
+Malaysia,my
+Malta,mt
+Mexico,mx
+Moldova,md
+Mongolia,mn
+Montenegro,me
+Morocco,ma
+Mozambique,mz
+Myanmar,mm
+Nepal,np
+Netherlands,nl
+New Zealand,nz
+Nicaragua,ni
+Nigeria,ng
+North Korea,kp
+North Macedonia,mk
+Norway,no
+Oman,om
+Pakistan,pk
+Palestine,ps
+Panama,pa
+Paraguay,py
+Peru,pe
+Philippines,ph
+Poland,pl
+Portugal,pt
+Puerto Rico,pr
+Qatar,qa
+Romania,ro
+Russia,ru
+Rwanda,rw
+Saint Kitts and Nevis,kn
+San Marino,sm
+Saudi Arabia,sa
+Senegal,sn
+Serbia,rs
+Sierra Leone,sl
+Singapore,sg
+Slovakia,sk
+Slovenia,si
+Somalia,so
+South Korea,kr
+Spain,es
+Sri Lanka,lk
+Sudan,sd
+Sweden,se
+Switzerland,ch
+Syria,sy
+Taiwan,tw
+Tajikistan,tj
+Tanzania,tz
+Thailand,th
+Trinidad and Tobago,tt
+Tunisia,tn
+Turkey,tr
+Turkmenistan,tm
+Uganda,ug
+Ukraine,ua
+United Arab Emirates,ae
+United Kingdom,uk
+United States,us
+Uzbekistan,uz
+Venezuela,ve
+Vietnam,vn
+Virgin Islands of the United States,vi
+Western Sahara,eh
+Yemen,ye
+Unsorted,unsorted

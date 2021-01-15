@@ -17,6 +17,8 @@ UUID=25af58d0-8c9e-4604-bb84-c61c37041993                 none    swap    sw    
 # NTFS Partitions
 UUID=9C484FA7484F7ED0   /mnt/LENOVO             ntfs    rw,user,exec,uid=1000,gid=1000,dmask=027,fmask=027,errors=remount-ro 0       1
 UUID=3E36091B3608D635   /mnt/Windows            ntfs    rw,user,exec,uid=1000,gid=1000,dmask=027,fmask=027,errors=remount-ro 0       1
+#UUID=9C484FA7484F7ED0   /mnt/LENOVO             ntfs-3g  permissions             0       1
+#UUID=3E36091B3608D635   /mnt/Windows            ntfs-3g  permissions             0       1
 
 # tmpfs
 #/root/images/tmpfile.bin   /tmp                 ext4    rw,nosuid,nodev,bind    0      0

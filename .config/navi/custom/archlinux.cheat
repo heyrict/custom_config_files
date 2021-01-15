@@ -1,0 +1,10 @@
+% archlinux.remove-orphan
+
+# Remove packages not required by any package
+sudo pacman -Rsn $(pacman -Qdtq)
+
+
+% archlinux.list-orphan
+
+# List packages not required by any package
+pacman -Qdt | cut -d" " -f 1,2 | awk '{printf "\033[1m%-20s\033[0m\t\033[0;32m%s\033[0m\n", $1, $2}'

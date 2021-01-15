@@ -1,0 +1,12 @@
+% db.pg.dump
+
+# Dump postgresql database to file
+pg_dump <dbname> | gzip > <outfile>.gz
+
+
+% db.pg.restore
+
+# Restore postgresql database from file
+gunzip -c <filename> | psql <dbname>
+
+$ filename: ls

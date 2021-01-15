@@ -1,5 +1,7 @@
 /home/heyrict/Programs/
+├── ascf
 ├── bin
+│   ├── ascf -> ../ascf
 │   ├── graphql-playground -> ../GraphqlPlayground/graphql-playground-electron-1.8.10-x86_64.AppImage
 │   ├── hasura
 │   ├── html2text -> ../html2text/html2text.py
@@ -51,7 +53,7 @@
 │   ├── __pycache__
 │   └── README.md
 ├── rpcs3
-│   └── rpcs3-v0.0.10-10383-b5dbb2eb_linux64.AppImage
+│   └── rpcs3-v0.0.13-11371-7a015b6f_linux64.AppImage
 ├── Slicer-4.11.0-2020-04-30-linux-amd64
 │   ├── bin
 │   ├── include
@@ -71,4 +73,4 @@
     ├── ventoy
     └── Ventoy2Disk.sh
 
-41 directories, 30 files
+41 directories, 32 files

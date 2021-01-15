@@ -1,0 +1,10 @@
+% git.reset_shallow
+
+# Hard reset a shallow repository
+if [ <hard_reset_the_git_repo_to_master> = yes ]; then
+    git fetch --depth=1
+    git reset --hard origin/master
+    git clean -dfx
+fi
+
+$ hard_reset_the_git_repo_to_master: echo yes no | tr " " "\n"

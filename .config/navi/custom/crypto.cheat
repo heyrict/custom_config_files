@@ -1,0 +1,6 @@
+% crypto.rsa.private-to-public
+
+# Convert RSA private key to public key
+openssl rsa -pubout -in <private_file> -out <public_file>
+
+$ private_file: ls

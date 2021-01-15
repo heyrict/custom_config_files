@@ -38,4 +38,3 @@ taskd.key=\/home\/heyrict\/.task\/freecinc_736fb58d.key.pem
 taskd.certificate=\/home\/heyrict\/.task\/freecinc_736fb58d.cert.pem
 taskd.ca=\/home\/heyrict\/.task\/freecinc_736fb58d.ca.pem
 taskd.credentials=FreeCinc\/freecinc_736fb58d\/c4842865-237a-4342-94ce-48eef6bf605d
-context=postgraduate

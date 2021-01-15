@@ -1,0 +1,14 @@
+% entertainment.streaming.iptv.country
+
+# IPTV by country
+celluloid https://iptv-org.github.io/iptv/countries/$(echo "<country-code>" | cut -d, -f2).m3u
+
+$ country-code: cat ~/.config/navi/custom/assets/country-code.txt
+
+
+% entertainment.streaming.iptv.language
+
+# IPTV by language
+celluloid https://iptv-org.github.io/iptv/languages/$(echo "<language-code>" | cut -d, -f2).m3u
+
+$ language-code: cat ~/.config/navi/custom/assets/language-code.txt

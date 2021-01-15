@@ -1,0 +1,73 @@
+Akan,aka
+Albanian,sqi
+Amharic,amh
+Arabic,ara
+Armenian,hye
+Azerbaijani,aze
+Basque,eus
+Bengali,ben
+Bosnian,bos
+Bulgarian,bul
+Burmese,mya
+Catalan,cat
+Chinese,zho
+Croatian,hrv
+Czech,ces
+Danish,dan
+Dutch,nld
+English,eng
+Estonian,est
+Faroese,fao
+Finnish,fin
+French,fra
+Galician,glg
+Georgian,kat
+German,deu
+Hebrew,heb
+Hindi,hin
+Hungarian,hun
+Icelandic,isl
+Indonesian,ind
+Italian,ita
+Japanese,jpn
+Javanese,jav
+Kazakh,kaz
+Khmer,khm
+Kinyarwanda,kin
+Korean,kor
+Kurdish,kur
+Lao,lao
+Latvian,lav
+Luxembourgish,ltz
+Macedonian,mkd
+Malay (macrolanguage),msa
+Malayalam,mal
+Mandarin Chinese,cmn
+Min Nan Chinese,nan
+Modern Greek (1453-),ell
+Mongolian,mon
+Norwegian Bokmål,nob
+Persian,fas
+Polish,pol
+Portuguese,por
+Pushto,pus
+Romanian,ron
+Russian,rus
+Serbian,srp
+Sinhala,sin
+Slovak,slk
+Slovenian,slv
+Somali,som
+Spanish,spa
+Swedish,swe
+Tagalog,tgl
+Tamil,tam
+Thai,tha
+Turkish,tur
+Turkmen,tuk
+Ukrainian,ukr
+Urdu,urd
+Vietnamese,vie
+Western Frisian,fry
+Yue Chinese,yue
+Undefined,undefined
