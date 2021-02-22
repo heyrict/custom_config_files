@@ -113,8 +113,8 @@ floating_modifier $mod
 bindsym $mod+Return exec alacritty
 
 # look up in dict
-bindsym $mod+i exec "alacritty -t 'dict_lookup | float' -d 72 12 --position 200 200 -e bash -c 'sdcv -cn \\"$(xclip -o)\\" | less -R'"
-bindsym $mod+Shift+i exec "alacritty -t 'dict_lookup | float' -d 72 12 --position 200 200 -e bash -c 'sdcv -c'"
+bindsym $mod+i exec "alacritty -t 'dict_lookup | float' -o window.dimensions.columns=72 -o window.dimensions.lines=12 -o window.position.x=200 -o window.position.y=200 -e bash -c 'sdcv -cn \\"$(xclip -o)\\" | less -R'"
+bindsym $mod+Shift+i exec "alacritty -t 'dict_lookup | float' -o window.dimensions.columns=72 -o window.dimensions.lines=12 -o window.position.x=200 -o window.position.y=200 -e bash -c 'sdcv -c'"
 
 # kill focused window
 bindsym $mod+Shift+q kill
